@@ -4,8 +4,8 @@ body {
     height: 100%;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-size: 18px;
-    background: rgb(93,113,147);
-    background: linear-gradient(90deg, rgba(93,113,147,1) 0%, rgba(79,90,107,1) 33%, rgba(79,90,107,1) 68%, rgba(93,113,147,1) 100%); 
+    background: rgb(0,195,227);
+    background: linear-gradient(90deg, rgba(0,195,227,1) 50%, rgba(230,0,0,1) 50%); 
 }
 
 a {
@@ -55,7 +55,7 @@ header .header-content .header-content-inner h1 {
 }
 
 header .header-content .header-content-inner p {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: 16px;
     font-weight: 300;
     color: whitesmoke;
@@ -81,6 +81,8 @@ section .box {
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
     overflow: hidden;
     color: #000;
+    background: rgb(93,113,147);
+    background: linear-gradient(90deg, rgba(93,113,147,1) 0%, rgba(79,90,107,1) 33%, rgba(79,90,107,1) 68%, rgba(93,113,147,1) 100%);
 }
 
 
@@ -95,7 +97,7 @@ section .box {
 
     header .header-content {
         position: absolute;
-        top: 50%;
+        top: 15%;
         padding: 0 50px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
