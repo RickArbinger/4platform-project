@@ -1,5 +1,5 @@
 html,
-body {
+body {                      /* styling of the body */
     width: 100%;
     height: 100%;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
@@ -12,7 +12,7 @@ body {
     color: orange;
   }
 
-a {
+a {                                 /* styling of the body */
     color: yellowgreen;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -20,19 +20,18 @@ a {
 }
 
 a:hover,
-a:focus {
+a:focus {                               /* color scheme */     
     color: forestgreen;
 }
 
-p {
+p {                                      /* Paragraph styling */
     font-size: 16px;
     line-height: 1.5;
 }
 
-header {
+header {                                        /* Header styling */
     position: relative;
-    width: 100%;
-    
+    width: 100%; 
     min-height: auto;
     text-align: center;
     color: rgb(0, 0, 0);
@@ -45,14 +44,14 @@ header {
     -o-background-size: cover;
 }
 
-header .header-content {
+header .header-content {            /* header position and size */
     position: center;
     width: 100%;
     padding: 100px 15px 70px;
     text-align: center;
 }
 
-header .header-content .header-content-inner h1 {
+header .header-content .header-content-inner h1 {       /* Header H1 content styling */
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 50px;
@@ -60,7 +59,7 @@ header .header-content .header-content-inner h1 {
     color: whitesmoke;
 }
 
-header .header-content .header-content-inner p {
+header .header-content .header-content-inner p {    /* Header P content styling */
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
@@ -70,7 +69,7 @@ header .header-content .header-content-inner p {
 
 
 
-section {
+section {                               /* the styling of the sections which contain text, videos and images */
     position: relative;
     display: flex;
     justify-content: center;
@@ -80,7 +79,7 @@ section {
     height: 100vh;
 }
 
-section .box {
+section .box {                  /* the styling of the sections which contain text, videos and images */
     position: relative;
     max-width: 600px;
     padding: 50px;
@@ -97,12 +96,12 @@ section .box {
 
 
 
-@media(min-width:768px) {
+@media(min-width:768px) {               /* Styling header */
     header {
         min-height: 100%;
     }
 
-    header .header-content {
+    header .header-content {         /* styling content */
         position: absolute;
         top: 25%;
         padding: 0 50px;
@@ -111,17 +110,17 @@ section .box {
         transform: translateY(-50%);
     }
 
-    header .header-content .header-content-inner {
+    header .header-content .header-content-inner {      /* styling header like margin and width */
         margin-right: auto;
         margin-left: auto;
         max-width: 1000px;
     }
 
-	header .header-content .header-content-inner h1 {
+	header .header-content .header-content-inner h1 {       /* font-size H1 content */
     	font-size: 75px;
 		}
 
-    header .header-content .header-content-inner p {
+    header .header-content .header-content-inner p {        /* styling header P content */
         margin-right: auto;
         margin-left: auto;
         max-width: 80%;
@@ -129,13 +128,13 @@ section .box {
     }
 }
 
-.section-heading {
+.section-heading {           /* styling section heading */
     margin-top: 0;
     margin-bottom: 20px;
 }
 
 
-.intro {
+.intro {            /* styling intro content and background of intro */
 	color: #fff;
     background: rgb(93,113,147);
     background: linear-gradient(90deg, rgba(93,113,147,1) 0%, rgba(79,90,107,1) 33%, rgba(79,90,107,1) 68%, rgba(93,113,147,1) 100%); 
@@ -149,38 +148,38 @@ section .box {
 .promo a:link,
 .promo a:visited,
 .promo a:hover,
-.promo a:active {
+.promo a:active {       /* navbar styling */
     color: white;
 	text-shadow: 0px 0px 40px black;
     text-decoration: none;
 }
 
-.promo-item {
+.promo-item {       /* navbar styling */
     height: 200px;
     line-height: 180px;
     text-align: center;
 }
 
-.promo-item:hover {
+.promo-item:hover {     /* navbar styling */
     background-size: 110%; 
     border: 10px solid rgba(255,255,255,0.3);
     line-height: 160px;
 }
 
-.promo-item h3 {
+.promo-item h3 {        /* navbar styling */
     font-size: 40px;
     display: inline-block;
     vertical-align: middle;
 }
 
-.text-light {
+.text-light {       /* navbar styling */
     color: rgba(255,255,255,.7);
     text-align: justify;
     max-width: 1000px;
 }
 
 
-.navbar-default {
+.navbar-default {           /* navbar styling */
     border-color: rgba(34,34,34,.05);
     background-color: rgb(70, 75, 83);
     -webkit-transition: all .35s;
@@ -188,90 +187,90 @@ section .box {
     transition: all .35s;
 }
 
-.navbar-default .navbar-header .navbar-brand {
+.navbar-default .navbar-header .navbar-brand {          /* navbar color styling */
     color: #89a6d2;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
-.navbar-default .navbar-header .navbar-brand:focus {
+.navbar-default .navbar-header .navbar-brand:focus {        /* navbar color styling */
     color: #89a6d2;
 }
 
 .navbar-default .nav > li>a,
-.navbar-default .nav>li>a:focus {
+.navbar-default .nav>li>a:focus {       /* navbar color styling */
     color: #222;
 }
 
 .navbar-default .nav > li>a:hover,
-.navbar-default .nav>li>a:focus:hover {
+.navbar-default .nav>li>a:focus:hover {     /* navbar color styling */
     color: #687ea1;
 }
 
 .navbar-default .nav > li.active>a,
-.navbar-default .nav>li.active>a:focus {
+.navbar-default .nav>li.active>a:focus {        /* navbar color styling */
     color: #89a6d2 !important;
     background-color: transparent;
 }
 
 .navbar-default .nav > li.active>a:hover,
-.navbar-default .nav>li.active>a:focus:hover {
+.navbar-default .nav>li.active>a:focus:hover {      /* navbar color styling */
     background-color: transparent;
 }
 
-@media(min-width:768px) {
+@media(min-width:768px) {               /* Navbar */
     .navbar-default {
         border-color: rgba(255,255,255,.3);
         
     }
 
-    .navbar-default .navbar-header .navbar-brand {
+    .navbar-default .navbar-header .navbar-brand {      /* navbar styling */
         color: rgba(214, 214, 214, 0.7);
         letter-spacing: 0.5em;
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
-    .navbar-default .navbar-header .navbar-brand:focus {
+    .navbar-default .navbar-header .navbar-brand:focus {        /* navbar color styling */
         color: #89a6d2;
     }
 
     .navbar-default .nav > li>a,
-    .navbar-default .nav>li>a:focus {
+    .navbar-default .nav>li>a:focus {       /* navbar color styling */
         color: rgba(214, 214, 214, 0.7);
     }
 
     .navbar-default .nav > li>a:hover,
-    .navbar-default .nav>li>a:focus:hover {
+    .navbar-default .nav>li>a:focus:hover {     /* navbar color styling */
         color: #687ea1;
     }
 
-    .navbar-default.affix {
+    .navbar-default.affix {             /* navbar color styling */
         border-color: #fff;
         background-color: #fff;
         box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.1);
     }
 
-    .navbar-default.affix .navbar-header .navbar-brand {
+    .navbar-default.affix .navbar-header .navbar-brand {            /* navbar color styling */
         letter-spacing: 0;
         color: rgb(63, 63, 63);
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
-    .navbar-default.affix .navbar-header .navbar-brand:focus {
+    .navbar-default.affix .navbar-header .navbar-brand:focus {      /* navbar color styling */
         color: #89a6d2;
     }
 
     .navbar-default.affix .nav > li>a,
-    .navbar-default.affix .nav>li>a:focus {
+    .navbar-default.affix .nav>li>a:focus {     /* navbar color styling */
         color: #222;
     }
 
     .navbar-default.affix .nav > li>a:hover,
-    .navbar-default.affix .nav>li>a:focus:hover {
+    .navbar-default.affix .nav>li>a:focus:hover {       /* navbar color styling */
         color: #687ea1;
     }
 }
 
-.btn-default {
+.btn-default {              /* color codes of the website */
     border-color: #fff;
     color: #222;
     background-color: #fff;
@@ -285,7 +284,7 @@ section .box {
 .btn-default.focus,
 .btn-default:active,
 .btn-default.active,
-.open > .dropdown-toggle.btn-default {
+.open > .dropdown-toggle.btn-default {  	    /* color codes of the website */
     border-color: #eee;
     color: #222;
     background-color: #eee;
@@ -293,7 +292,7 @@ section .box {
 
 .btn-default:active,
 .btn-default.active,
-.open > .dropdown-toggle.btn-default {
+.open > .dropdown-toggle.btn-default {          /* background of the website */
     background-image: none;
 }
 
@@ -314,17 +313,17 @@ fieldset[disabled] .btn-default.focus,
 fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
-fieldset[disabled] .btn-default.active {
+fieldset[disabled] .btn-default.active {        /* color codes of the website */
     border-color: #fff;
     background-color: #fff;
 }
 
-.btn-default .badge {
+.btn-default .badge {                /* color codes of the website */
     color: #fff;
     background-color: #222;
 }
 
-.btn-primary {
+.btn-primary {                      /* color codes of the website */
     border-color: yellowgreen;
     color: #fff;
     background-color: yellowgreen;
@@ -338,7 +337,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.focus,
 .btn-primary:active,
 .btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
+.open > .dropdown-toggle.btn-primary {              /* color codes of the website */
     border-color: limegreen;
     color: #fff;
     background-color: limegreen;
@@ -346,7 +345,7 @@ fieldset[disabled] .btn-default.active {
 
 .btn-primary:active,
 .btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
+.open > .dropdown-toggle.btn-primary {       /* background of the website */
     background-image: none;
 }
 
@@ -367,52 +366,52 @@ fieldset[disabled] .btn-primary.focus,
 fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
-fieldset[disabled] .btn-primary.active {
+fieldset[disabled] .btn-primary.active {        /* color codes of the website */
     border-color: yellowgreen;
     background-color: yellowgreen;
 }
 
-.btn-primary .badge {
+.btn-primary .badge {       /* color codes of the website */
     color: yellowgreen;
     background-color: #fff;
 }
 
 
-.btn {
+.btn {                      /* styling of the website */
     border-radius: 300px;
     text-transform: uppercase;
 }
 
-.btn-lg {
+.btn-lg {                        /* styling of the website */
     padding: 15px 30px;
 }
 
-::-moz-selection {
+::-moz-selection {                /* styling and color of the website */
     text-shadow: none;
     color: #fff;
     background: #222;
 }
 
-::selection {
+::selection {                     /* styling and color of the website */
     text-shadow: none;
     color: #fff;
     background: #222;
 }
 
-img::selection {
+img::selection {              /* styling and color of the website */
     color: #fff;
     background: 0 0;
 }
 
-img::-moz-selection {
+img::-moz-selection {           /* styling and color of the website */
     color: #fff;
     background: 0 0;
 }
 
-.text-primary {
+.text-primary {              /* color of the website */
     color: black;
 }
 
-.bg-primary {
-    background-color: yellowgreen;
+.bg-primary {                /* color of the website */
+    background-color: yellowgreen;  
 }
