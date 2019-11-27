@@ -8,6 +8,10 @@ body {
     background: linear-gradient(90deg, rgba(93,113,147,1) 0%, rgba(79,90,107,1) 33%, rgba(79,90,107,1) 68%, rgba(93,113,147,1) 100%); 
 }
 
+.checked {                              /* style for the rating */
+    color: orange;
+  }
+
 a {
     color: yellowgreen;
     -webkit-transition: all .35s;
@@ -28,14 +32,16 @@ p {
 header {
     position: relative;
     width: 100%;
+    
     min-height: auto;
     text-align: center;
     color: rgb(0, 0, 0);
-    background-image: url('../images/2.png');
+    background-image: url('../images/header2.png');
     background-position: center;
     -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
+    -moz-background-size: 100%;
+    background-size: 100%;
+    background-repeat:no-repeat;
     -o-background-size: cover;
 }
 
@@ -81,6 +87,9 @@ section .box {
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
     overflow: hidden;
     color: #000;
+    background: rgb(93,113,147);
+    background: linear-gradient(90deg, rgba(93,113,147,1) 0%, rgba(79,90,107,1) 33%, rgba(79,90,107,1) 68%, rgba(93,113,147,1) 100%); 
+    opacity: .8;
 }
 
 
@@ -95,7 +104,7 @@ section .box {
 
     header .header-content {
         position: absolute;
-        top: 50%;
+        top: 25%;
         padding: 0 50px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -109,7 +118,7 @@ section .box {
     }
 
 	header .header-content .header-content-inner h1 {
-    	font-size: 100px;
+    	font-size: 75px;
 		}
 
     header .header-content .header-content-inner p {
@@ -166,7 +175,10 @@ section .box {
 
 .text-light {
     color: rgba(255,255,255,.7);
+    text-align: justify;
+    max-width: 1000px;
 }
+
 
 .navbar-default {
     border-color: rgba(34,34,34,.05);

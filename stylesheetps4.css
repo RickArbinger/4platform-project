@@ -4,8 +4,8 @@ body {
     height: 100%;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-size: 18px;
-    background: rgb(93,113,147);
-    background: linear-gradient(90deg, rgba(93,113,147,1) 0%, rgba(79,90,107,1) 33%, rgba(79,90,107,1) 68%, rgba(93,113,147,1) 100%); 
+    background: rgb(89,125,190);
+    background: linear-gradient(90deg, rgba(89,125,190,1) 25%, rgba(0,48,135,1) 75%);
 }
 
 a {
@@ -20,12 +20,12 @@ a:focus {
     color: forestgreen;
 }
 
-p {
+p {                         /* Paragraph styling */
     font-size: 16px;
     line-height: 1.5;
 }
 
-header {
+header {                    /* Header styling */
     position: relative;
     width: 100%;
     min-height: auto;
@@ -39,14 +39,14 @@ header {
     -o-background-size: cover;
 }
 
-header .header-content {
+header .header-content {    /* header position and size */
     position: center;
     width: 100%;
     padding: 100px 15px 70px;
     text-align: center;
 }
 
-header .header-content .header-content-inner h1 {
+header .header-content .header-content-inner h1 {   /* Header H1 content styling */
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 50px;
@@ -54,7 +54,7 @@ header .header-content .header-content-inner h1 {
     color: whitesmoke;
 }
 
-header .header-content .header-content-inner p {
+header .header-content .header-content-inner p {    /* Header P content styling */
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
@@ -64,7 +64,7 @@ header .header-content .header-content-inner p {
 
 
 
-section {
+section {                                        
     position: relative;
     display: flex;
     justify-content: center;
@@ -81,6 +81,8 @@ section .box {
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
     overflow: hidden;
     color: #000;
+    background: rgb(93,113,147);
+    background: linear-gradient(90deg, rgba(93,113,147,1) 0%, rgba(79,90,107,1) 33%, rgba(79,90,107,1) 68%, rgba(93,113,147,1) 100%);
 }
 
 
@@ -95,7 +97,7 @@ section .box {
 
     header .header-content {
         position: absolute;
-        top: 50%;
+        top: 25%;
         padding: 0 50px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -128,8 +130,8 @@ section .box {
 
 .intro {
 	color: #fff;
-    background: rgb(93,113,147);
-    background: linear-gradient(90deg, rgba(93,113,147,1) 0%, rgba(79,90,107,1) 33%, rgba(79,90,107,1) 68%, rgba(93,113,147,1) 100%); 
+    background: rgb(89,125,190);
+    background: linear-gradient(90deg, rgba(89,125,190,1) 25%, rgba(0,48,135,1) 75%);
     padding: 70px 0;
     text-align: center;
 }
@@ -166,6 +168,8 @@ section .box {
 
 .text-light {
     color: rgba(255,255,255,.7);
+    text-align: justify;
+    max-width: 1000px;
 }
 
 .navbar-default {
